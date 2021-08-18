@@ -22,7 +22,7 @@ let collectionArr = [
     }
 ];
 
-testFunction = (arr, val1, val2) => {
+/*testFunction = (arr, val1, val2) => {
     const result = [];
     arr.forEach(value => {
 
@@ -31,7 +31,7 @@ testFunction = (arr, val1, val2) => {
         }
     });
     return result;
-}
+}*/
 
-const t = testFunction(collectionArr, 'rest', 34);
+const t = collectionArr.filter(value => (value.name === 'rest' || value.age === 34));
 console.log(t);
