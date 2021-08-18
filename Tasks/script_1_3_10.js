@@ -23,18 +23,26 @@ let collectionArr = [
 ];
 
 testFunction = (arr, val1, val2) => {
-    let result = false;
+    let countAll = lengthFunction(arr);
+    let count  = 0;
+
     arr.forEach(value => {
 
         if (value.name === val1 && value.age === val2) {
-            result = true;
-        } else {
-            result = false;
-            return result;
+            count++;
         }
     });
-    return result;
+    return count === countAll;
 }
 
-const t = testFunction(collectionArr, 'rest', 34);
+lengthFunction = (arr) => {
+   let count = 0;
+
+   arr.forEach((value, index) => {
+       count = index + 1;
+   });
+   return count;
+}
+
+const t = testFunction(collectionArr, 'test', 34);
 console.log(t);
