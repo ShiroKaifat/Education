@@ -21,15 +21,16 @@ let collectionArr = [
     }
 ];
 
-testFunction = (arr, val) => {
-
+/*testFunction = (arr, val) => {
+    let item = collectionArr.filter(value => value.name === val);
+    return item;
     collectionArr.forEach(item => {
 
         if (item.name === val) {
             console.log(item);
         }
     });
-}
+}*/
 
-const t = testFunction(collectionArr, 'test');
+const t = collectionArr.filter(value => value.name === 'test');
 console.log(t);
