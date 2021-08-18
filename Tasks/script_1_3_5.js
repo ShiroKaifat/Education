@@ -5,12 +5,14 @@
 const testFunction = (arr, value) => {
     let number = -1;
 
-    arr.forEach((element, index) => {
+    let number = array.lastIndexOf(value);
+
+    /*arr.forEach((element, index) => {
 
         if (element === value) {
             number = index;
         }
-    });
+    });*/
     return number;
 }
 
