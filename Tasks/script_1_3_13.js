@@ -21,12 +21,16 @@ let collectionArr = [
 ];
 
 testFunction = (arr, val1) => {
-    const values = [];
+    let values = [];
+    let values1 = [];
 
     arr.forEach(item => {
-        values.push(item[val1]);
+        //values.push(item[val1]);
+        values = Object.values([item[val1]]);
+        values1.push(values[0]);
     });
-    return values;
+
+    return values1;
 }
 
 const t = testFunction(collectionArr, 'name');
