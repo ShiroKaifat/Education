@@ -1,21 +1,37 @@
-//В функцию передаем массив и значение.
-// По результату выполнения вывести true,
-// если в массиве есть значение равное второму параметру.
+//В функцию передаем коллекцию и название ключа.
+// По результату выполнения вывести массив значений по этому ключу всех объектов.
 
-let array = [5, 7, 2, 9, 4, 2, 8, 9, 4, 2, 7, 4, 12,
-    754, 2345, 2, 8, 244, 2545, 6, 3, 9];
+let collectionArr = [
+    {
+        name: 'test',
+        age: 9
+    },
+    {
+        name: 'rest',
+        age: 89
+    },
+    {
+        name: 'west',
+        age: 23
+    },
+    {
+        name: 'test',
+        age: 34
+    }
+];
 
 testFunction = (arr, val1) => {
-   /* let result = false
+    let values = [];
+    let values1 = [];
 
-    arr.forEach(value => {
+    arr.forEach(item => {
+        //values.push(item[val1]);
+        values = Object.values([item[val1]]);
+        values1.push(values[0]);
+    });
 
-        if (value === val1) {
-            result = true;
-        }
-    });*/
-    return arr.some(elem => elem === val1);
+    return values1;
 }
 
-const t = testFunction(array, 9);
+const t = testFunction(collectionArr, 'name');
 console.log(t);
