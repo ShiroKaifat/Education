@@ -6,7 +6,14 @@ let array2 = [5, 7, 2, 9, 4, 2, 8, 9, 4, 2, 7, 4, 12,
     754, 2345, 2, 8, 244, 2545, 6, 3, 9];
 
 testFunction = (...arrays) => {
-    let result = [...arrays[0], ...arrays[1]];
+    let result = [];
+
+    arrays.forEach(array => {
+
+        array.forEach(item => {
+            result.push(item);
+        });
+    });
     return result;
 }
 
