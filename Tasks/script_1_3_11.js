@@ -23,15 +23,22 @@ let collectionArr = [
 ];
 
 testFunction = (arr, val1, val2) => {
-    let result = false;
+    //let result = false;
 
-    arr.forEach(value => {
+    for (let i = 0; i < arr.length; i++) {
+
+        if (arr[i].name === val1 && arr[i].age === val2) {
+            return true;
+            break;
+        }
+    }
+/*    arr.forEach(value => {
 
         if (value.name === val1 && value.age === val2) {
             result = true;
         }
-    });
-    return result;
+    });*/
+    return false;
 }
 
 const t = testFunction(collectionArr, 'rest', 89);
