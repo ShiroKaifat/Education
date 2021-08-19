@@ -12,15 +12,15 @@ testFunction = (objectVal, keyVal) => {
    for(let key in objectVal) {
        keys.push(key);
    }
-   let flag = false;
 
-   keys.forEach(item => {
+   for (let i = 0; i < keys.length; i++) {
 
-       if (item === keyVal) {
-           flag = true;
+       if (keys[i] === keyVal) {
+           return 'Exist';
        }
-   });
-   return flag ? 'Exist' : 'No exist';
+   }
+
+   return 'No exist';
 }
 
 const t = testFunction(r, 'test');
