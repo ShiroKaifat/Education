@@ -1,0 +1,27 @@
+.search {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+
+}
+.search input {
+    width: 400px;
+    height: 30px;
+    resize: none;
+}
+.search input:focus {
+    outline: none;
+    border-color: rgba(44, 136, 222, 0.5);
+    border-width: 4px;
+    color: red;
+}
+
+.search button {
+    height: 30px;
+    width: 100px;
+    margin-top: 0.25%;
+    margin-left: 5px;
+    border-radius: 10%;
+    border-color: black;
+    background-color: rgba(192, 192, 192, 0.3);
+}
