@@ -1,0 +1,25 @@
+.news {
+    display: flex;
+    justify-content: center;
+    flex-flow: wrap;
+
+}
+.news__item {
+    width: 600px;
+    display: flex;
+    margin-top: 20px;
+}
+.news__img{
+    height: 100px;
+    width: 100px;
+
+}
+.news__content-wrapper {
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+}
+.news__link {
+    color: deepskyblue;
+    text-decoration-line: none;
+}
