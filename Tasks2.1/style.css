@@ -1,0 +1,14 @@
+.block1{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    padding: 10px;
+}
+.block2 {
+    border: 3px solid black;
+}
+.block1:hover{
+    background: cadetblue;
+}
+input1 {
+    border: 1px solid black;
+    outline: black;
+}
