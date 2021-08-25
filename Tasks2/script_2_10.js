@@ -1,11 +1,7 @@
 //Добавить все значения из второго массива в первый
 
 addMassive = (arr1, arr2) => {
-
-    arr2.forEach(item => {
-        arr1.push(item);
-    });
-    return arr1;
+    return arr1.concat(arr2);
 }
 
 let array1 = [4, 1, 8, 5, 23];
