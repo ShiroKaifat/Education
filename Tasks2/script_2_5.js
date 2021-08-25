@@ -2,7 +2,7 @@
 
 findPositive = (arr) => {
 
-    if (Math.min.apply(Math, arr) < 0) {
+    if (Math.min(...arr) < 0) {
         return false;
     }
     return true;
