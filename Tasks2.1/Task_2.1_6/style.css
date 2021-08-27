@@ -18,9 +18,7 @@
      top: 50%;
      transform: translateY(-50%);
      font-size: 30px;
-
      color: white;
-     z-index: 10;
  }
 .box4 {
     background: #9f5298;
