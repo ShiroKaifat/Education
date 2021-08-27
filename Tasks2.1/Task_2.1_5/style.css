@@ -1,0 +1,20 @@
+.link a {
+    background-color: white;
+    border: 1px solid black;
+    padding: 1vh;
+    text-decoration-line: none;
+    color: black;
+    font-family: 'Noto Serif', serif;
+}
+.link {
+    display: flex;
+    margin: 10vh;
+    align-items: center;
+    justify-content: center;
+}
+.link a:hover {
+    background-color: #f7faeb;
+    color: #ba3c31;
+    border: none;
+    box-shadow: 0 0 1vh 0.7vh black;
+}
